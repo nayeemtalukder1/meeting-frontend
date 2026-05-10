@@ -9,7 +9,7 @@ const MeetingDisplay = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/meetings")
+    fetch("https://meeting-app-95r2.onrender.com/meetings")
       .then((res) => res.json())
       .then((data) => {
         setMeetings(data);
@@ -34,7 +34,7 @@ const MeetingDisplay = () => {
 
   if (!confirmDelete) return;
 
-  const res = await fetch(`http://localhost:5000/meetings/${id}`, {
+  const res = await fetch(`https://meeting-app-95r2.onrender.com/meetings/${id}`, {
     method: "DELETE",
   });
 

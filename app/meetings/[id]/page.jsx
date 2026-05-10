@@ -9,7 +9,7 @@ const MeetingDetails = () => {
   const [editMode, setEditMode] = useState(false);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/meetings/${id}`)
+    fetch(`https://meeting-app-95r2.onrender.com/meetings/${id}`)
       .then((res) => res.json())
       .then((data) => setMeeting(data));
   }, [id]);
@@ -21,7 +21,7 @@ const MeetingDetails = () => {
   const handleUpdate = async (e) => {
   e.preventDefault();
 
-  const res = await fetch(`http://localhost:5000/meetings/${id}`, {
+  const res = await fetch(`https://meeting-app-95r2.onrender.com/meetings/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(meeting),

@@ -10,7 +10,7 @@ const AddMeeting = () => {
     const meetingData = Object.fromEntries(formData.entries());
     console.log(meetingData);
 
-    const res = await fetch('http://localhost:5000/meetings', {
+    const res = await fetch('https://meeting-app-95r2.onrender.com/meetings', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
