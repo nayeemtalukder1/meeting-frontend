@@ -50,6 +50,13 @@ const MeetingDisplay = () => {
       <h1 className="text-4xl font-bold text-center mb-10">
         Meeting Display Page
       </h1>
+      <button
+    onClick={() => router.push("/addmeeting")}
+    className="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-xl font-semibold transition"
+  >
+    + Add Meeting
+  </button>
+
 
       {meetings.length === 0 ? (
         <div className="text-center text-xl font-medium">
