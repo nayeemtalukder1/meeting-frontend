@@ -52,7 +52,7 @@ const MeetingDisplay = () => {
       </h1>
       <button
     onClick={() => router.push("/addmeeting")}
-    className="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-xl font-semibold transition"
+    className="bg-green-600 hover:bg-green-700 text-white px-5 py-3 rounded-xl font-semibold transition mb-5"
   >
     + Add Meeting
   </button>
